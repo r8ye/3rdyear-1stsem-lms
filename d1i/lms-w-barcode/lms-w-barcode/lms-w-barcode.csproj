@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DE4BE2D-F521-46E9-A992-58703901AE4C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>lms_w_barcode</RootNamespace>
+    <AssemblyName>lms-w-barcode</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\..\..\Downloads\drive-download-20241007T073813Z-001\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add-Update-Forms\addupdateAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add-Update-Forms\addupdateAuthor.Designer.cs">
+      <DependentUpon>addupdateAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formAuthor.Designer.cs">
+      <DependentUpon>formAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formBooks.Designer.cs">
+      <DependentUpon>formBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formBorrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formBorrower.Designer.cs">
+      <DependentUpon>formBorrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formCirculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formCirculation.Designer.cs">
+      <DependentUpon>formCirculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formClassification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formClassification.Designer.cs">
+      <DependentUpon>formClassification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formDashboard.Designer.cs">
+      <DependentUpon>formDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formDepartment.Designer.cs">
+      <DependentUpon>formDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formGenre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formGenre.Designer.cs">
+      <DependentUpon>formGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formGradeLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formGradeLevel.Designer.cs">
+      <DependentUpon>formGradeLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formInventory.Designer.cs">
+      <DependentUpon>formInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formPublisher.Designer.cs">
+      <DependentUpon>formPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\formSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\formSection.Designer.cs">
+      <DependentUpon>formSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add-Update-Forms\addupdateAuthor.resx">
+      <DependentUpon>addupdateAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formAuthor.resx">
+      <DependentUpon>formAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formBooks.resx">
+      <DependentUpon>formBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formBorrower.resx">
+      <DependentUpon>formBorrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formCirculation.resx">
+      <DependentUpon>formCirculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formClassification.resx">
+      <DependentUpon>formClassification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formDashboard.resx">
+      <DependentUpon>formDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formDepartment.resx">
+      <DependentUpon>formDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formGenre.resx">
+      <DependentUpon>formGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formGradeLevel.resx">
+      <DependentUpon>formGradeLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formInventory.resx">
+      <DependentUpon>formInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formPublisher.resx">
+      <DependentUpon>formPublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\formSection.resx">
+      <DependentUpon>formSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubnhslogooo-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubnhslogooo-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubnhslogooo-removebg-preview2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
